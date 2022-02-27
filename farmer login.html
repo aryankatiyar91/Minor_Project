@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>farmer login</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-image:url("1wp.jpg");
+        }
+        h4{
+            text-align:center;
+        }
+        .style{
+            margin-bottom:10px;
+        }
+        .container{
+            padding-top:150px;
+        }
+        .panel body{
+            background-color: rgb(29, 24, 24);
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:35px;
+        }
+        .container1{
+            padding-left:85px;
+            padding-right:85px;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container1">
+                <a href="#"class="navbar-brand">Portal</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a href="click page.html"><span class="glyphicon glyphicon-indent-right">Go on choose page</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form method="post"action="farmer login.php">
+                <div class="col-xs-4 col-xs-offset-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4>LOGIN</h4>
+                        </div>
+                        <div class="panel body">
+                            <p class="text-warning"><i>Login for Farmer</i></p>
+                            <div class="form-group">
+                                <label value="Contact_number">Contact_number:</label>
+                                <input type="Contact_number"class="form-control"name="Contact_number"pattern="[7-9]{1}[0-9]{9}" maxlength="10"placeholder="please enter 10 digit mobile number"required>
+                            </div>
+                            <div class="form-group">
+                                <label value="password">Password:</label>
+                                <input type="password"id="password"class="form-control"name="Password"maxlength="6"placeholder="password"required>
+                            </div>
+                            <a href="farmers data.html"><button class="btn btn-block btn-success style"name="login">Login</button></a>
+                            <div class="panel-footer"><b>If you don't remembered Your password?</b><a href="forgot pass.html">Forgot Password</a><br>
+                            <b>If you don't have an account?</b><a href="farmer p.html">Registration</a></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>“Copyright © 2021 E-PORTAL FOR FARMERS"</p>
+            </div>
+        </footer>
+    </body>
+</html> 

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-image: url("backgriund.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .style{
+            margin-bottom:10px;
+        }
+        .container{
+            padding-top:100px;
+        }
+        .panel body{
+            background-color: rgb(29, 24, 24);
+            
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:35px;
+        }
+        label{
+            font-size:20px;
+            font-weight: normal;
+        }
+        h4{
+            font-size:30px;
+            font-family:cursive;
+            text-align: center;
+        }
+        input{
+            font-size:20px;
+        }
+        h1{
+            
+            text-decoration: underline;
+        }
+        h2{
+            font-size:20px;
+            text-decoration: none;
+        }
+        .float{
+            float:right;
+        }
+        .container1{
+            padding-left:85px;
+            padding-right:85px;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container1">
+                <a href="#"class="navbar-brand">Portal</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span>About</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form method="post"action="contact.php">
+                <div class="col-lg-5">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>Contact Us</h4>
+                        </div>
+                        <div class="panel body">
+                            <div class="form-group">
+                                <label value="Full name">Full Name:</label>
+                                <input type="name"class="form-control"name="Full_Name"placeholder="Enter your full name"required>
+                            </div>
+                            <div class="form-group">
+                                <label value="Email">Email Address:</label>
+                                <input type="Email"class="form-control"name="Email"placeholder="Please add your valid email address">
+                            </div>
+                            <div class="form-group">
+                                <label value="tel">Contact Number:</label>
+                                <input type="tel"class="form-control"name="Contact_Number"pattern="[7-9]{1}[0-9]{9}" maxlength="10" placeholder="Contact Number"required>
+                            </div>
+                            <div class="form-group">
+                                <label value="message">Reason for Contact:</label>
+                                <textarea name="Message"cols="45"rows="5" required></textarea>
+                            </div>
+                            <a href=""><button class="btn btn-block btn-primary style"name="Submit">Send Message</button></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="float">
+                <h1>E-portal</h1>
+                <h2>Email Address for emergency Contact:-</h2>
+                <a href="mailto:helpingfarmers005@gmail.com"><h2>helpingfarmers005@gmail.com</h2></a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>“Copyright © 2021 E-PORTAL FOR FARMERS"</p>
+            </div>
+        </footer>
+    </body>
+</html> 

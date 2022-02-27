@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>सीधे किसानों से संपर्क करें</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h4{
+            text-align:center;
+            font-weight: bold;
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:60px;
+        }
+        body{
+            background-image: url("backgriund.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container1{
+            padding-top:80px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a href="#"class="navbar-brand">ई-पोर्टल</a>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="farmers info H.php"><span class="glyphicon glyphicon-tasks"></span>पीछे की ओर</a></li>
+                    <li><a href="home hindi.html"><span class="glyphicon glyphicon-log-out"></span>लॉग आउट</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container container1">
+        <form method="post"action="customer to farmers H.php">
+            <div class="col-xs-12 col-xs-12">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h4>सीधे किसानों से संपर्क करें</h4>
+                    </div>
+                    <div class="panel body">
+                        <div class="form-group">
+                            <label value="Full name">पूरा नाम:</label>
+                            <input type="name"class="form-control"name="Full_Name"placeholder="अपना पूरा नाम भरें"required>
+                        </div>
+                        <div class="form-group">
+                            <label value="Full Address">पूरा पता:</label>
+                            <input type="Contact number"class="form-control"name="Full_Address"placeholder="अपना पूरा पता दर्ज करें"required>
+                        </div>
+                        <div class="form-group">
+                            <label value="Contact number">संपर्क संख्या:</label>
+                            <input type="Contact number"class="form-control"name="Contact_Number"pattern="[7-9]{1}[0-9]{9}" maxlength="10" placeholder="कृपया अपना 10 अंकों का संपर्क नंबर दर्ज करें"required>
+                        </div>
+                        <div class="form-group">
+                            <label value="Message">आप किसानों से कौन सा उत्पाद चाहते हैं:</br>कृपया विवरण जोड़ें:-</label></label>
+                            <textarea name="Messages"cols="170"rows="5"placeholder="कृपया किसानों के लिए अपना संदेश दर्ज करें" required></textarea>
+                        </div>
+                        <a href=""><button class="btn btn-block btn-danger style"name="Submit">किसान को संदेश भेजें</button></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>“Copyright © 2021 E-PORTAL FOR FARMERS"</p>
+        </div>
+    </footer>
+</body>
+</html> 

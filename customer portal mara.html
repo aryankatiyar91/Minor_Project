@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ग्राहक लॉगिन</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+        }
+        body{
+            background-image:url("1wp.jpg");
+        }
+        h4{
+            text-align:center;
+        }
+        .style{
+            margin-bottom:50px;
+        }
+        .container{
+            padding-top:150px;
+        }
+        .panel body{
+            background-color: rgb(29, 24, 24);
+        }
+        .container1{
+            padding-left:40px;
+            padding-right:30px;
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container1">
+                <a href="#"class="navbar-brand">पोर्टल</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home marathi.html"><span class="glyphicon glyphicon-home"></span>मुख्यपृष्ठ</a></li>
+                        <li><a href="click page marathi.html.html"><span class="glyphicon glyphicon-indent-right"></span>निवडा पृष्ठ वर जा</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="container">
+        <form method="post"action="customer emailM.php">
+            <div class="col-xs-4 col-xs-offset-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4>लॉगिन</h4>
+                    </div>
+                    <div class="panel body">
+                        <p class="text-warning"><i>ग्राहकांसाठी लॉगिन करा</i></p>
+                        <div class="form-group">
+                            <label value="Phone_Number">फ़ोन नंबर:</label>
+                            <input type="phone_Number"class="form-control"name="Phone_Number"pattern="[7-9]{1}[0-9]{9}" maxlength="10"placeholder="अपना मोबाइल नंबर दर्ज करें">
+                        </div>
+                        <div class="form-group">
+                            <label value="pwd">संकेतशब्द:</label>
+                            <input type="password"id="pwd"class="form-control"name="Password"maxlength="6"placeholder="संकेतशब्द">
+                        </div>
+                        <a href="farmer data collect.php"><button class="btn btn-block btn-success style"name="login">लॉगिन</button></a>
+                        <div class="panel-footer"><b>आपल्याला आपला संकेतशब्द आठवत नसेल तर?</b><a href="forgot pass cmara.html">संकेतशब्द विसरलात?</a><br>
+                        <b>आपल्याकडे खाते नसेल तर?</b><a href="customerp mara.html">नोंदणी</a></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+        <p>“शेतकर्‍यांसाठी कॉपीराइट २०२१ ई-पोर्टल"</p>
+        </div>
+    </footer>
+
+</body>
+</html>

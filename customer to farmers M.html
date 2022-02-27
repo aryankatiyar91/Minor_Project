@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>शेतकर्‍यांशी थेट संपर्क</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h4{
+            text-align:center;
+            font-weight: bold;
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:60px;
+        }
+        body{
+            background-image: url("backgriund.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container1{
+            padding-top:80px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a href="#"class="navbar-brand">ई-पोर्टल</a>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="farmers info M.php"><span class="glyphicon glyphicon-tasks"></span>परत जा</a></li>
+                    <li><a href="home marathi.html"><span class="glyphicon glyphicon-log-out"></span>लॉग आउट</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container container1">
+        <form method="post"action="customer to farmers M.php">
+            <div class="col-xs-12 col-xs-12">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h4>शेतकर्‍यांशी थेट संपर्क</h4>
+                    </div>
+                    <div class="panel body">
+                        <div class="form-group">
+                            <label value="Full name">पूर्ण नाव:</label>
+                            <input type="name"class="form-control"name="Full_Name"placeholder="आपले पूर्ण नाव प्रविष्ट करा"required>
+                        </div>
+                        <div class="form-group">
+                            <label value="Full Address">संपूर्ण पत्ता:</label>
+                            <input type="Contact number"class="form-control"name="Full_Address"placeholder="आपला पूर्ण पत्ता प्रविष्ट करा"required>
+                        </div>
+                        <div class="form-group">
+                            <label value="Contact number">संपर्क क्रमांक:</label>
+                            <input type="Contact number"class="form-control"name="Contact_Number"pattern="[7-9]{1}[0-9]{9}" maxlength="10" placeholder="कृपया आपला 10 अंकी संपर्क क्रमांक प्रविष्ट करा"required>
+                        </div>
+                        <div class="form-group">
+                            <label value="Message">आपल्याला शेतकर्‍यांकडून कोणते उत्पादन पाहिजे आहे:</br>कृपया तपशील जोडा: -</label></label>
+                            <textarea name="Messages"cols="170"rows="5"placeholder="कृपया आपला संदेश शेतकर्‍यासाठी प्रविष्ट करा" required></textarea>
+                        </div>
+                        <a href=""><button class="btn btn-block btn-danger style"name="Submit">शेतकर्‍याला संदेश पाठवा</button></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>“कॉपीराइट २०२१ शेतकर्‍यांसाठी ई-पोर्टल"</p>
+        </div>
+    </footer>
+</body>
+</html> 

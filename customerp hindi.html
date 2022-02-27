@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ग्राहक पोर्टल</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+        }
+        #content{
+            background-color:rgba(0,0,0,0.7);
+            margin:70px 400px 15px 400px;
+            padding:100px;
+            border-color: #ac2925;
+            box-shadow: inset 0 3px 5px rgba(70, 66, 66, 0.125);
+            text-align:center;
+            color:whitesmoke;
+            font-size:18px;
+            width:550px;
+            }
+        #background-image{
+            background-image:url("1wp.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:20px;
+            padding-bottom:20px;
+            margin-top:-30px;
+        }
+        input{
+            text-align:left;
+            float:right;
+            color:black;
+            font-family:cursive;
+        
+        }
+        label{
+            float:left;
+            font-family: cursive;
+        }
+        h1{
+            font-family:cursive;
+            font-style:oblique;
+        }
+        em{
+            font-style: italic;
+            color:gray;
+            float:right;
+            margin-left:50px;
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a href="#"class="navbar-brand">पोर्टल</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home hindi.html"><span class="glyphicon glyphicon-home">घर</span></a></li>
+                        <li><a href="customer portal hindi.html"><span class="glyphicon glyphicon-log-in"></span>लॉगइन करें</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="background-image">
+            <div id="content">
+                <h1>ग्राहकों के लिए पंजीकरण फॉर्म</h1>
+                <form method="post"action="customerp_H.php">
+                    
+                    <div class="form-group">
+                        <label for="fname">नाम:</label>
+                        <input type="text"id="fname"class="form control"name="First_name" placeholder="अपना पहला नाम दर्ज करें" required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">अंतिम नाम:</label>
+                        <input type="text"id="lname"class="form control"name="Last_name" placeholder="अंतिम नाम"required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone_Number">फ़ोन नंबर:</label>
+                        <input type="Phone_Number"id="Phone_Number"class="form control"name="Phone_Number"pattern="[7-9]{1}[0-9]{9}" maxlength="10"placeholder="कृपया १0 अंकों का मोबाइल नंबर दर्ज करें" required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">कुंजिका:</label>
+                        <input type="Password"id="pwd"class="form control"name="Password"maxlength="6"placeholder="अपना खुद का पासवर्ड बनाएं"required><br>
+                        <em>कृपया 6 अंकों का पासवर्ड दर्ज करें</em>
+                        <br><br>
+                    </div>
+                    <a href="#"><button class="btn btn-block btn-success style">जमा करे</button></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>"कॉपीराइट © २०२१ किसानों के लिए ई-पोर्टल"</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

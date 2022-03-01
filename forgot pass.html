@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>change password</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .style{
+            margin-top:180px;
+
+        }
+        body{
+            background-image:url("1wp.jpg");
+        }
+        input{
+            text-align:left;
+            float:center;
+            color:black;
+            font-family:cursive;
+            
+        
+        }
+        label{
+            font-family: cursive;
+            line-height:30px;
+            margin-left:15px;
+            text-align:left;
+        }
+        h1{
+            font-style:oblique;
+            text-align:center;
+            font-size:30px;
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:128px;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a href="#"class="navbar-brand">Portal</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="farmer login.html"><span class="glyphicon glyphicon-fast-backward"></span>Back</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-xs-4 col-xs-offset-4 style">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h1>Forgot Password</h1>
+                    </div>
+                    <form method="post"action="forgot pass.php">
+                        <div class="form-group"><br>
+                            <label value="tel">Contact_number:</label>
+                            <input type="tel"class="form-control"name="Contact_number"pattern="[7-9]{1}[0-9]{9}" maxlength="10"placeholder="Enter Your registered contact number"required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label value="password">New Password:</label>
+                            <input type="password"class="form-control password "name="password"placeholder="Enter password"required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label value="password">Confirm Password:</label>
+                            <input type="password"class="form-control confirmpassword "name="Confirm_password"placeholder="Enter password"required autofocus>
+                        </div>
+                        
+                           
+                        <a href=""><button type="submit"class="button btn btn-success btn-block"name="change">Change Password</button></a><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.button').onclick=function()
+            {
+                var password=document.querySelector('.password').value,
+                    confirmpassword=document.querySelector('.confirmpassword').value;
+
+                if(password!=confirmpassword)
+                {
+                    alert("password didn't match please try again.")
+                    return false
+                }
+                else if(password==0)
+                {
+                    alert("please enter password")
+                }
+                else{
+                    alert("password change")
+                }
+
+            } 
+        </script>
+        <footer>
+            <div class="footer">
+                <p>“Copyright © 2021 E-PORTAL FOR FARMERS"</p>
+            </div>
+        </footer>
+    </body>
+</html>
+    

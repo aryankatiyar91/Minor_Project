@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>किसान डेटा</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table{
+            border:1px solid black;
+            width:100%;
+            margin-top: 50px;
+            
+        }
+        input{
+            border-bottom:1px solid gray;
+            border-left:0px;
+            border-right:0px;
+            border-top:0px;
+            margin-top:10px;
+            width:50%;
+            height: 30px;
+        }
+        #background-image{
+           background-color:hsl(2px, 20px, 30px);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+        td{
+            padding:1%;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .form1{
+            text-align:center;
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:137px;
+        }
+        body{
+            background-image: url("backgriund.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a href="#"class="navbar-brand">पोर्टल</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="list H.php"><span class="glyphicon glyphicon-list"></span>पहले से जोड़ें उत्पादों की सूची</a></li>
+                        <li><a href="help ih.html"><span class="glyphicon glyphicon-question-sign"></span>मदद</a></li>
+            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="background-image">
+            <div id="content">
+                <form method="post"action="farmers data H.php"enctype="multipart-form-data">
+                    <h1>किसानों की जानकारी</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="fname">पहला नाम:</label>
+                                <input type="text"id="fname"class="form control"name="First_name" placeholder="पहला नाम" required><br>
+                            </td>
+                            <td><label for="lname">अंतिम नाम:</label>
+                                <input type="text"id="lname"class="form control"name="Last_name" placeholder="उपनाम" required><br>
+                            </td>
+                            <td>
+                            <div class="form-group">
+                                <label for="Language">भाषा:</label>
+                                <select class="form-control" name="Language" style="max-width:100%;">
+                                    <option value="English">अंग्रेज़ी</option>
+                                    <option value="Hindi">हिंदी</option>
+                                    <option value="Marathi">मराठी</option>
+                                </select>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label for="Taluka">गांव का नाम:</label>
+                                    <select class="form-control"name="village_name" style="max-width:100%;">
+                                        <option value="धरनगाँव"> धरनगाँव</option>
+                                        <option value="अमलनेर">अमलनेर</option>
+                                        <option value="भडगाँव">भडगाँव</option>
+                                        <option value="भुसावल">भुसावल</option>
+                                        <option value="बोडवाडी">बोडवाडी</option>
+                                        <option value="चालीसगाँव">चालीसगाँव</option>
+                                        <option value="चोपड़ा">चोपड़ा</option>
+                                        <option value="एरंडोल">एरंडोल</option>
+                                        <option value="जलगांव ">जलगांव </option>
+                                        <option value="जामनेर">जामनेर</option>
+                                        <option value="मुक्ताईनगर">मुक्ताईनगर</option>
+                                        <option value="पाचोरा">पाचोरा</option>
+                                        <option value="परोला"> परोला</option>
+                                        <option value="रावेर">रावेर</option>
+                                        <option value="यावल">यावल </option>
+                                    </select>
+                                </td>
+                            <td>
+                                <label for="choose">चुनें:</label>
+                                <select class="form-control"name="option" style="max-width:100%;"required>
+                                    <option value="vegetable">सबजी</option>
+                                    <option value="fruits">फले</option>
+                                    <option value="wheat">गेहूँ</option>
+                                    <option value="rice">चावल</option>
+                                    <option value="pulses">दालों</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price">कीमत:</label>
+                                <input type="price"id="price"class="form control"name="Price" maxlength="10" placeholder="कुल मूल्य दर्ज करें" required><br>
+            
+                            </td>
+                            <td>
+                                <label for="kg">१ किलोग्राम की कीमत:</label>
+                                <input type="price"id="kg"class="form control"name="kg"min="1" max="1000"  placeholder="१ किलोग्राम की कीमत दर्ज करें"required><br>
+            
+                            </td>
+                            <td>
+                                <label for="kg">उपलब्ध मात्रा:</label>
+                                <input type="quantity"id="kg"class="form control"name="quantity"min="1" max="1000"  placeholder="कृपया नंबर डालें"required><br>
+            
+                            </td>
+                        </tr>
+                            <td>
+                                <label for="file_photo">सब्जियों/अनाजों की मूल तस्वीर:</label>
+                                <input type="file" name="photo"accept=".jpg, .jpeg, .png"  required><br>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="#"><button class="btn btn-block btn-success">अपलोड करो</button></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>"कॉपीराइट © २०२१ किसानों के लिए ई-पोर्टल"</p>
+            </div>
+        </footer>
+    </body>
+</html>

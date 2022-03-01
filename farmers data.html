@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Farmer data</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table{
+            border:1px solid black;
+            width:100%;
+            margin-top: 50px;
+            
+        }
+        input{
+            border-bottom:1px solid gray;
+            border-left:0px;
+            border-right:0px;
+            border-top:0px;
+            margin-top:10px;
+            width:50%;
+            height: 30px;
+        }
+        #background-image{
+           background-color:hsl(2px, 20px, 30px);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+        td{
+            padding:1%;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .form1{
+            text-align:center;
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:137px;
+        }
+        body{
+            background-image: url("backgriund.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a href="#"class="navbar-brand">portal</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="list.php"><span class="glyphicon glyphicon-list"></span>List Of Already Add products</a></li>
+                        <li><a href="help i.html"><span class="glyphicon glyphicon-question-sign"></span>Help</a></li>
+            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav>
+        <div id="background-image">
+            <div id="content">
+                <form method="post"action="farmers_data.php"enctype="multipart/form-data">
+                    <h1>Farmers Information</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="fname">First_Name:</label>
+                                <input type="text"id="fname"class="form control"name="First_name" placeholder="first Name" required><br>
+                            </td>
+                            <td><label for="lname">Last_Name:</label>
+                                <input type="text"id="lname"class="form control"name="Last_name" placeholder="last Name" required><br>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <label for="Language">Language:</label>
+                                    <select class="form-control" name="Language" style="max-width:100%;">
+                                        <option value="English">English</option>
+                                        <option value="Hindi">Hindi</option>
+                                        <option value="Marathi">Marathi</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="form-group">
+                                    <label for="Village_name">Village_name:</label>
+                                    <select class="form-control" name="village_name" style="max-width:100%;">
+                                        <option value="Dharangaon"> Dharangaon</option>
+                                        <option value="Amalner">Amalner</option>
+                                        <option value="Bhadgaon">Bhadgaon</option>
+                                        <option value="Bhusawal">Bhusawal</option>
+                                        <option value="Bodwad">Bodwad</option>
+                                        <option value="Chalisgaon">Chalisgaon</option>
+                                        <option value="Chopda">Chopda</option>
+                                        <option value="Erandol">Erandol</option>
+                                        <option value="Jalgaon">Jalgaon</option>
+                                        <option value="Jamner">Jamner</option>
+                                        <option value="Muktainagar">Muktainagar</option>
+                                        <option value="Pachora">Pachora</option>
+                                        <option value="Parola"> Parola</option>
+                                        <option value="Raver">Raver</option>
+                                        <option value="Yawal">Yawal</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <label for="Pincode">Pincode:</label>
+                                <input type="pin code"id="pincode"class="form control"name="Pincode"maxlength="6" placeholder="Please enter correct pic code" required><br>
+                            </td>
+                            <td>
+                                <label for="choose">choose:</label>
+                                <select class="form-control"name="option" style="max-width:100%;"required>
+                                    <option value="vegetable">vegetable</option>
+                                    <option value="fruits">fruits</option>
+                                    <option value="wheat">wheat</option>
+                                    <option value="rice">rice</option>
+                                    <option value="pulses">pulses</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price">price:</label>
+                                <input type="price"id="price"class="form control"name="Price" maxlength="10" placeholder="Enter Total price" required><br>
+            
+                            </td>
+                            <td>
+                                <label for="kg">Price in 1kg:</label>
+                                <input type="price"id="kg"class="form control"name="kg"min="1" max="1000"  placeholder="Enter kg"required><br>
+            
+                            </td>
+                            <td>
+                                <label for="kg">Available Quantity:</label>
+                                <input type="quantity"id="kg"class="form control"name="quantity"min="1" max="1000"  placeholder="Please put in number"required><br>
+            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="file"> original Photo of vegetables/grains:</label>
+                                <input type="file" name="photo"accept=".jpg, .jpeg, .png" required><br>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="list.php"><button class="btn btn-block btn-success">Upload</button></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>“Copyright © 2021 E-PORTAL FOR FARMERS"</p>
+            </div>
+        </footer>
+    </body>
+</html>

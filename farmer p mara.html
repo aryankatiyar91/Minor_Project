@@ -1,0 +1,177 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>शेतकरी पोर्टल</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .form-group{
+            margin-bottom:15px;
+        }
+        #content{
+            background-color:rgba(0,0,0,0.7);
+            margin:70px 400px 15px 400px;
+            padding:100px;
+            border-color: #ac2925;
+            box-shadow: inset 0 3px 5px rgba(70, 66, 66, 0.125);
+            text-align:center;
+            color:whitesmoke;
+            font-size:18px;
+            border-radius:6px;
+            width:660px;
+            }
+        #background-image{
+            background-image:url("1wp.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:20px;
+            padding-bottom:20px;
+            margin-top:-30px;
+        }
+        input{
+            text-align:left;
+            float:right;
+            color:black;
+            font-family:cursive;
+        
+        }
+        label{
+            float:left;
+            font-family: cursive;
+        }
+        h1{
+            font-family:cursive;
+            font-style:oblique;
+        }
+        select,option{
+            margin-left:266px;
+            margin-bottom:7%;
+            font-family: cursive;
+            font-weight: bold;
+            
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+        }
+        .checkbox{
+            float:left;
+            
+        }
+        i{
+            font-size:16px;
+            line-height:20px;
+            
+        }
+        em{
+            font-style: italic;
+            color:gray;
+            float:right;
+            margin-left:50px;
+        }
+    
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a href="#"class="navbar-brand">पोर्टल</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home marathi.html"><span class="glyphicon glyphicon-home"></span>मुख्यपृष्ठ</a></li>
+                        <li><a href="farmer login mara.html"><span class="glyphicon glyphicon-log-in"></span>लॉगिन</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="background-image">
+            <div id="content">
+                <h1>शेतकर्‍यांसाठी नोंदणी फॉर्म</h1>
+                <form method="post"action="farmer_portal_M.php">
+                    
+                    <div class="form-group">
+                        <label for="fname">पहिले नाव:</label>
+                        <input type="text"id=fname class="form control"name="First_name" placeholder="पहिले नाव" required><br><br>
+                        <label for="mname">मधले नाव:</label>
+                        <input type="text" id="mname"class="form control"name="Middle_name"placeholder="मधले नाव"required><br><br>
+                        <label for="lname">आडनाव:</label>
+                        <input type="text"id="lname"class="form control"name=" Last_name" placeholder="आडनाव"required><br><br>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="Taluka">तालुका:</label>
+                        <select class="form-control" name="option" style="max-width:42%;">
+                            <option value="धरणगाव"> धरणगाव</option>
+                            <option value="अमळनेर">अमळनेर</option>
+                            <option value="भडगाव">भडगाव</option>
+                            <option value="भुसावळ">भुसावळ</option>
+                            <option value="बोदवड">बोदवड</option>
+                            <option value="चाळीसगाव">चाळीसगाव</option>
+                            <option value="चोपडा">चोपडा</option>
+                            <option value="एरंडोल">एरंडोल</option>
+                            <option value="जळगाव">जळगाव</option>
+                            <option value="जामनेर">जामनेर</option>
+                            <option value="मुक्ताईनगर">मुक्ताईनगर</option>
+                            <option value="पाचोरा">पाचोरा</option>
+                            <option value="पारोळा">पारोळा</option>
+                            <option value="रावेर">रावेर</option>
+                            <option value="यावल">यावल</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Address">संपूर्ण पत्ता:</label>
+                        <input type="text"id="Address"class="form control" name="Full_address"placeholder="कृपया आपला संपूर्ण पत्ता प्रविष्ट करा" required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">राज्यः</label>
+                        <input type="text"id="state"class="form control" value="महाराष्ट्र"name="state" disabled><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Contact number">संपर्क क्रमांक:</label>
+                        <input type="tel"id="Contact number"class="form control" name="Contact_number"pattern="[7-9]{1}[0-9]{9}" maxlength="10" placeholder="कृपया 10 अंकी फोन नंबर प्रविष्ट करा" required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">ईमेल:</label>
+                        <input type="Email"id="Email"class="form control"name="Email"placeholder="आपला वैध ईमेल आयडी प्रविष्ट करा"><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Adhar card Number">आधार कार्ड क्रमांक:</label>
+                        <input type="Adhar card number"id="Aadhar Card Number"class="form control"name="Aadhar_card_number" maxlength="12"placeholder="आपला योग्य आधार कार्ड क्रमांक प्रविष्ट करा" required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">संकेतशब्द:</label>
+                        <input type="Password"id="pwd"class="form control"name="Password"maxlength="6"placeholder="आपला स्वतःचा संकेतशब्द तयार करा" required><br>
+                        <em>कृपया 6 अंकी संकेतशब्द प्रविष्ट करा</em>
+                        <br><br>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"class="checkbox" checkbox required><p><i>मी शेतकऱ्यांसाठी ई-पोर्टलच्या अटी व शर्ती समजून घेतो आणि त्यासाठी मान्यता देतो.</i></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"class="checkbox" checked required><p><i> या संकेतस्थळावर नोंदणी करून, आपण या फॉर्ममध्ये किंवा यापुढे नमूद केलेला डेटा या वेबसाइटवर पुढील विश्लेषण, प्रक्रिया आणि पोहोच यासाठी आयोजकांशी सामायिक करण्यास सहमती देता. आपला डेटा अन्य वापरकर्त्यांद्वारे परस्पर संवाद साधण्यासाठी आणि उत्पादनावर आपल्याला नियमित आणि निरंतर अद्यतने प्रदान करण्यासाठी देखील पाहिले जाईल.</i></P><br>
+                    </div>
+                    <a href="click page.html"><button class="btn btn-block btn-success"name="submit">प्रस्तुत करणे</button></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>“शेतकर्‍यांसाठी कॉपीराइट २०२१ ई-पोर्टल"</p>
+            </div>
+        </footer>
+    </body>
+</html>

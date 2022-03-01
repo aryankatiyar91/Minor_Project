@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>किसान पोर्टल</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .form-group{
+            margin-bottom:15px;
+        }
+        #content{
+            background-color:rgba(0,0,0,0.7);
+            margin:70px 400px 15px 400px;
+            padding:100px;
+            border-color: #ac2925;
+            box-shadow: inset 0 3px 5px rgba(70, 66, 66, 0.125);
+            text-align:center;
+            color:whitesmoke;
+            font-size:18px;
+            border-radius:6px;
+            width:660px;
+            }
+        #background-image{
+            background-image:url("1wp.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:20px;
+            padding-bottom:20px;
+            margin-top:-30px;
+        }
+        input{
+            text-align:left;
+            float:right;
+            color:black;
+            font-family:cursive;
+        
+        }
+        label{
+            float:left;
+            font-family: cursive;
+        }
+        h1{
+            font-family:cursive;
+            font-style:oblique;
+        }
+        select,option{
+            margin-left:266px;
+            margin-bottom:7%;
+            font-family: cursive;
+            font-weight: bold;
+            
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+        }
+        .checkbox{
+            float:left;
+            
+        }
+        i{
+            font-size:16px;
+            line-height:20px;
+            
+        }
+        em{
+            font-style: italic;
+            color:gray;
+            float:right;
+            margin-left:50px;
+        }
+        
+    
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a href="#"class="navbar-brand">पोर्टल</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home hindi.html"><span class="glyphicon glyphicon-home">घर</span></a></li>
+                        <li><a href="farmer login hindi.html"><span class="glyphicon glyphicon-log-in"></span>लॉगइन करें</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="background-image">
+            <div id="content">
+                <h1>किसान के लिए पंजीकरण प्रपत्र</h1>
+                <form method="post"action="farmer_portal_H.php">
+                    <div class="form-group">
+                        <label for="fname">प्रथम नाम:</label>
+                        <input type="text"id="fname"class="form control"name="First_name" placeholder="प्रथम नाम" required><br><br>
+                        <label for="mname">मध्य नाम:</label>
+                        <input type="text" id="mname"class="form control"name="Middle_name"placeholder="मध्य नाम"required><br><br>
+                        <label for="lname">अंतिम नाम:</label>
+                        <input type="text"id="lname"class="form control"name="Last_name" placeholder="अंतिम नाम"required><br><br>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="Taluka">तालुका :</label>
+                        <select class="form-control"name="option" style="max-width:42%;">
+                            <option value="धरनगाँव"> धरनगाँव</option>
+                            <option value="अमलनेर">अमलनेर</option>
+                            <option value="भडगाँव">भडगाँव</option>
+                            <option value="भुसावल">भुसावल</option>
+                            <option value="बोडवाडी">बोडवाडी</option>
+                            <option value="चालीसगाँव">चालीसगाँव</option>
+                            <option value="चोपड़ा">चोपड़ा</option>
+                            <option value="एरंडोल">एरंडोल</option>
+                            <option value="जलगांव ">जलगांव </option>
+                            <option value="जामनेर">जामनेर</option>
+                            <option value="मुक्ताईनगर">मुक्ताईनगर</option>
+                            <option value="पाचोरा">पाचोरा</option>
+                            <option value="परोला"> परोला</option>
+                            <option value="रावेर">रावेर</option>
+                            <option value="यावल">यावल </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Address">पूरा पता :</label>
+                        <input type="text"id="Address"class="form control" name="Full_address"placeholder="कृपया अपना पूरा पता दर्ज करें" required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">राज्य :</label>
+                        <input type="text"id="state"class="form control" value="महाराष्ट्र"name="state" disabled><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Contact Number">संपर्क संख्या :</label>
+                        <input type="Phone no"id="Contact Number"class="form control" name="Contact_number" maxlength="10" pattern="[0-9]{10}"placeholder="कृपया 10 अंकों का फोन संख्या दर्ज करें " required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">ई-मेल आईडी :</label>
+                        <input type="Email"id="Email"class="form control"name="Email"placeholder=" एक वैध ईमेल आईडी दर्ज करें "><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Adhar Card Number">आधार कार्ड संख्या:</label>
+                        <input type="Adhar card number"id="Adhar Card Number"class="form control" maxlength="12" name="Aadhar_card_number"placeholder="अपना सही आधार कार्ड संख्या दर्ज करें" required><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">पासवर्ड(संकेतशब्द):</label>
+                        <input type="Password"id="pwd"class="form control"name="Password"maxlength="6"placeholder="अपना खुद का पासवर्ड बनाएं" required><br>
+                        <em>कृपया 6 अंकों का पासवर्ड दर्ज करें</em>
+                        <br><br>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"class="checkbox" checkbox required><p><i>मैं किसानों के लिए ई-पोर्टल के नियमों और शर्तों को समझता हूं और उनसे सहमत हूं। </i></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"class="checkbox" checked required><p><i>इस वेबसाइट पर पंजीकरण करके, आप आगे के विश्लेषण और प्रसंस्करण के लिए इस इस प्रपत्र या किसी भी रूप में उल्लिखित डेटा को आयोजक के साथ साझा करने के लिए सहमत हैं। आपका डेटा अन्य उपयोगकर्ताओं द्वारा भी देखा जाएगा ताकि आपसे बातचीत करने और आपको आपके उत्पाद पर नियमित और निरंतर नवीनतम जानकारी प्राप्त हो पाए।</i></P><br>
+                    </div>
+                    <a href="#"><button class="btn btn-block btn-success">जमा करें</button></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>"कॉपीराइट © २०२१ किसानों के लिए ई-पोर्टल"</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>शेतकरी डेटा</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table{
+            border:1px solid black;
+            width:100%;
+            margin-top: 50px;
+            
+        }
+        input{
+            border-bottom:1px solid gray;
+            border-left:0px;
+            border-right:0px;
+            border-top:0px;
+            margin-top:10px;
+            width:50%;
+            height: 30px;
+        }
+        #background-image{
+           background-color:hsl(2px, 20px, 30px);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+        td{
+            padding:1%;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .form1{
+            text-align:center;
+        }
+        .footer{
+            padding: 10px 0;
+            background-color:whitesmoke;
+            color:#555454; 
+            bottom: 0;  
+            width: 100%;
+            text-align:center;
+            font-weight: bold;
+            margin-top:139px;
+        }
+        body{
+            background-image: url("backgriund.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a href="#"class="navbar-brand">पोर्टल</a>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="list M.php"><span class="glyphicon glyphicon-list"></span>आधीपासूनच जोडा उत्पादनांची यादी</a></li>
+                        <li><a href="help im.html"><span class="glyphicon glyphicon-question-sign"></span>मदत</a></li>
+            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav>
+        <div id="background-image">
+            <div id="content">
+                <form method="post"action="farmers data M.php"enctype="multipart-form-data">
+                    <h1>शेतकर्‍यांची माहिती</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="fname">पहिले नाव:</label>
+                                <input type="text"id="fname"class="form control"name="First_name" placeholder="पहिले नाव" required><br>
+                            </td>
+                            <td><label for="lname">आडनाव:</label>
+                                <input type="text"id="lname"class="form control"name="Last_name" placeholder="आडनाव" required><br>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <label for="Language">भाषा</label>
+                                    <select class="form-control" name="Language" style="max-width:100%;">
+                                        <option value="English">इंग्रजी</option>
+                                        <option value="Hindi">हिंदी</option>
+                                        <option value="Marathi">मराठी</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label for="Village_name">गावचे नाव:</label>
+                                    <select class="form-control"name="village_name" style="max-width:100%;">
+                                        <option value="धरणगाव">धरणगाव </option>
+                                        <option value="अमळनेर">अमळनेर</option>
+                                        <option value="भडगांव">भडगांव</option>
+                                        <option value="भुसावल">भुसावल</option>
+                                        <option value="बोडवाड">बोडवाड</option>
+                                        <option value="चाळीसगाव">चाळीसगाव</option>
+                                        <option value="चोपडा">चोपडा</option>
+                                        <option value="एरंडोल">एरंडोल</option>
+                                        <option value="जळगाव">जळगाव </option>
+                                        <option value="जामनेर">जामनेर</option>
+                                        <option value="मुक्ताईनगर">मुक्ताईनगर</option>
+                                        <option value="पाचोरा">पाचोरा</option>
+                                        <option value="परोला">परोला</option>
+                                        <option value="रावेर">रावेर</option>
+                                        <option value="यावल">यावल </option>
+                                    </select>
+                                </div>
+                            <td>
+                                <label for="Pincode">पिन कोड:</label>
+                                <input type="pin code"id="pincode"class="form control"name="Pincode"maxlength="6" placeholder="कृपया योग्य पिक कोड प्रविष्ट करा" required><br>
+                            </td>
+                            <td>
+                                <label for="choose">निवडा:</label>
+                                <select class="form-control"name="option" style="max-width:100%;"required>
+                                    <option value="vegetable">भाजी</option>
+                                    <option value="fruits">फळे</option>
+                                    <option value="wheat">गहू</option>
+                                    <option value="rice">तांदूळ</option>
+                                    <option value="pulses">डाळी</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price">किंमत:</label>
+                                <input type="price"id="price"class="form control"name="Price" maxlength="10" placeholder="एकूण किंमत प्रविष्ट करा" required><br>
+            
+                            </td>
+                            <td>
+                                <label for="kg">१ किलो ची किंमत:</label>
+                                <input type="price"id="kg"class="form control"name="kg"min="1" max="1000"  placeholder="१ किलो ची किंमत प्रविष्ट करा"required><br>
+            
+                            </td>
+                            <td>
+                                <label for="kg">उपलब्ध प्रमाण:</label>
+                                <input type="quantity"id="kg"class="form control"name="quantity"min="1" max="1000"  placeholder="कृपया नंबर लावा"required><br>
+            
+                            </td>
+                        </tr>
+                            <td>
+                                <label for="file_photo"> भाजीपाला / धान्यांचा मूळ फोटो:</label>
+                                <input type="file" name="photo"accept=".jpg, .jpeg, .png" required><br>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="#"><button class="btn btn-block btn-success">अपलोड करा</button></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>"शेतकर्‍यांसाठी कॉपीराइट २०२१ ई-पोर्टल"</p>
+            </div>
+        </footer>
+    </body>
+</html>
